@@ -1,0 +1,544 @@
+{
+  "id" : "6502a99d3dd14e7c65c8b34d",
+  "cts" : 1694673308963,
+  "mts" : 1694673308963,
+  "createdBy" : "Gautami Kumari",
+  "modifiedBy" : "Gautami Kumari",
+  "kongAdminHost" : "http://34.121.145.236:9001/",
+  "runtime" : "kong-valid-runtime",
+  "workspace" : "default",
+  "swaggerId" : "64df023bf5542711e10c688a",
+  "serviceName" : "api-monitoring",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "API Monitoring",
+  "serviceId" : "614f988d-d02a-42a3-9d65-d9ff890eb436",
+  "service" : {
+    "serviceName" : "api-monitoring",
+    "protocol" : "https",
+    "host" : "gcp-api.apiwiz.io",
+    "hosts" : [ "gcp-api.apiwiz.io" ],
+    "basePath" : "/itorix/v1/monitor",
+    "basePaths" : [ "/itorix/v1/monitor", "/" ],
+    "port" : 483,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    }
+  },
+  "routes" : [ {
+    "routeName" : "downloadCertificate",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/certificates/(?<name>\\w+/download" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getCollection",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "deleteCollection",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "DELETE" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "updateCollection",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "searchForEnvironment",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/variables/search" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getSchedulers",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/schedulers" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getMetaData",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/metadata" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "createMetaData",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "/itorix/v1/monitor/metadata" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "searchForCertificates",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/certificates/search" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getCertificatesOverView",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/certificates/overview" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getRequest",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests/(?<requestId>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "deleteRequest",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "DELETE" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests/(?<requestId>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "updateRequest",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests/(?<requestId>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "search",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/search" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getCollectionsVariable",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/variables" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "createRequest",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getRequests",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getRequestSequence",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/sequence" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "updateRequestSequence",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/sequence" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getSlackChannelsWithMonitoringScope",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/collections/slackChannels" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getCertificate",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/certificates/(?<name>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "deleteCertificate",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "DELETE" ],
+    "paths" : [ "~/itorix/v1/monitor/certificates/(?<name>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getVariables",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/variables/(?<id>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "deleteVariables",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "DELETE" ],
+    "paths" : [ "~/itorix/v1/monitor/variables/(?<id>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "updateVariables",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "PUT" ],
+    "paths" : [ "~/itorix/v1/monitor/variables/(?<id>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "createVariables",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/itorix/v1/monitor/variables" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getAllVariables",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/variables" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getRequestStatLogs",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests/(?<requestId>\\w+/events/(?<eventId>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getRequestStats",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "~/itorix/v1/monitor/collections/(?<id>\\w+/requests/(?<requestId>\\w+/schedulers/(?<schedulerId>\\w+" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "createCollection",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/itorix/v1/monitor/collections" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getCollections",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/collections" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getVariablesOverview",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/variables/overview" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "createOrUpdateCertificate",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/itorix/v1/monitor/certificates" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "getCertificates",
+    "service" : {
+      "id" : "614f988d-d02a-42a3-9d65-d9ff890eb436"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/itorix/v1/monitor/certificates" ],
+    "metadata" : {
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    }
+  } ],
+  "plugins" : [ ]
+}
