@@ -1,0 +1,1 @@
+{"notifyModel":{"type":"object","properties":{"messageId":{"type":"string","example":"0: 1653373666677824 % b8956e48b8956e48"},"status":{"type":"string","example":"success"},"$ref":{"type":"string","example":"delivered"}}},"definitions":{}}

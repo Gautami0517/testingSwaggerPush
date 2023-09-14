@@ -1,0 +1,1 @@
+{"NewPostResp":{"type":"object","properties":{"id":{"type":"number","example":""},"title":{"type":"string","example":""},"userId":{"type":"number","example":""}}},"definitions":{}}

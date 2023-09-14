@@ -1,0 +1,1 @@
+{"NewPostReq":{"type":"object","properties":{"title":{"type":"string","example":""},"userId":{"type":"string","example":""}}},"definitions":{}}
