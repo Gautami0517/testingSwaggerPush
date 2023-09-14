@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<APIProxy revision="1" name="API-Test-Studio">
+    <ConfigurationVersion majorVersion="4" minorVersion="0" />
+    <Description>API Test Studio</Description>
+    <Policies>
+        <!-- Values will be populated by deployment script -->
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>API-Test-Studio</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <!-- Values will be populated by deployment script -->
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <!-- Values will be populated by deployment script -->
+            <TargetEndpoint>API-Test-Studio</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>
