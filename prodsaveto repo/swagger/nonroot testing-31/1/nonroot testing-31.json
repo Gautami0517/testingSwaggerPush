@@ -1,0 +1,32 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "nonroot testing-31",
+    "description" : "Swagger Documentation for nonroot testing-31",
+    "version" : "v1.0.0"
+  },
+  "paths" : { },
+  "schemes" : [ ],
+  "x-servers" : [ ],
+  "consumes" : [ ],
+  "produces" : [ ],
+  "tags" : [ ],
+  "basePath" : "",
+  "host" : "",
+  "definitions" : { },
+  "securityDefinitions" : { },
+  "parameters" : { },
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "1e93c306acf04b2c98a8dff0c3aa7502",
+      "revision" : 1,
+      "documentation" : [ ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ ],
+        "definitions" : [ ]
+      } ]
+    }
+  }
+}
