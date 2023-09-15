@@ -1,0 +1,165 @@
+{
+  "id" : "65043b9fc52b8d00df377f2f",
+  "cts" : 1694776223562,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1694776223562,
+  "swaggerId" : "17d48a1f108543b589f83d92fe65c74c",
+  "oasVersion" : "2.0",
+  "swaggerRevision" : 4,
+  "apiId" : "65043ba2c52b8d00df377f31",
+  "revisionId" : "65043ba2c52b8d00df377f30",
+  "name" : "asset-management",
+  "displayName" : "asset management",
+  "description" : "",
+  "apiRevision" : 1,
+  "apiVersion" : 1,
+  "protocols" : [ "http" ],
+  "serviceUrl" : "http://34.121.145.236:9081/v1/acme/asset",
+  "path" : "/v1/acme/asset",
+  "subscriptionKeyParameterNames" : {
+    "header" : "Ocp-Apim-Subscription-Key",
+    "query" : "subscription-key"
+  },
+  "subscriptionRequired" : false,
+  "contact" : {
+    "email" : "apiteam@swagger.io"
+  },
+  "license" : {
+    "name" : "Apache 2.0",
+    "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+  },
+  "termsOfServiceUrl" : "http://swagger.io/terms/",
+  "tags" : [ ],
+  "products" : [ ],
+  "isCurrent" : true,
+  "isOnline" : true,
+  "apiOperations" : [ {
+    "name" : "registerCustomerAsset",
+    "displayName" : "registerCustomerAsset",
+    "method" : "post",
+    "urlTemplate" : "/",
+    "templateParameters" : [ ],
+    "description" : "",
+    "policies" : [ {
+      "name" : "base",
+      "description" : "Inherit tag",
+      "scope" : [ "PRODUCT", "API", "OPERATION" ],
+      "supportedScope" : [ "PRODUCT", "API", "OPERATION" ],
+      "section" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+      "supportedSection" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+      "useDefault" : false,
+      "policyElements" : [ {
+        "name" : "base",
+        "description" : "Inheritance tag",
+        "multiple" : false,
+        "addablePolicies" : false,
+        "policyElementAttributes" : [ ],
+        "policyElements" : [ ],
+        "selectedPolicyElements" : [ ],
+        "requiredPolicyElements" : [ ],
+        "requiredPolicyElementAttributes" : [ ]
+      } ]
+    } ],
+    "tags" : [ ]
+  }, {
+    "name" : "getCustomerAsset",
+    "displayName" : "getCustomerAsset",
+    "method" : "get",
+    "urlTemplate" : "/",
+    "templateParameters" : [ ],
+    "description" : "",
+    "policies" : [ {
+      "name" : "base",
+      "description" : "Inherit tag",
+      "scope" : [ "PRODUCT", "API", "OPERATION" ],
+      "supportedScope" : [ "PRODUCT", "API", "OPERATION" ],
+      "section" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+      "supportedSection" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+      "useDefault" : false,
+      "policyElements" : [ {
+        "name" : "base",
+        "description" : "Inheritance tag",
+        "multiple" : false,
+        "addablePolicies" : false,
+        "policyElementAttributes" : [ ],
+        "policyElements" : [ ],
+        "selectedPolicyElements" : [ ],
+        "requiredPolicyElements" : [ ],
+        "requiredPolicyElementAttributes" : [ ]
+      } ]
+    } ],
+    "tags" : [ ]
+  }, {
+    "name" : "deleteAsset",
+    "displayName" : "deleteAsset",
+    "method" : "delete",
+    "urlTemplate" : "/",
+    "templateParameters" : [ ],
+    "description" : "",
+    "policies" : [ {
+      "name" : "base",
+      "description" : "Inherit tag",
+      "scope" : [ "PRODUCT", "API", "OPERATION" ],
+      "supportedScope" : [ "PRODUCT", "API", "OPERATION" ],
+      "section" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+      "supportedSection" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+      "useDefault" : false,
+      "policyElements" : [ {
+        "name" : "base",
+        "description" : "Inheritance tag",
+        "multiple" : false,
+        "addablePolicies" : false,
+        "policyElementAttributes" : [ ],
+        "policyElements" : [ ],
+        "selectedPolicyElements" : [ ],
+        "requiredPolicyElements" : [ ],
+        "requiredPolicyElementAttributes" : [ ]
+      } ]
+    } ],
+    "tags" : [ ]
+  } ],
+  "policies" : [ {
+    "name" : "base",
+    "description" : "Inherit tag",
+    "scope" : [ "PRODUCT", "API", "OPERATION" ],
+    "supportedScope" : [ "PRODUCT", "API", "OPERATION" ],
+    "section" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+    "supportedSection" : [ "INBOUND", "OUTBOUND", "BACKEND", "ON_ERROR" ],
+    "useDefault" : false,
+    "policyElements" : [ {
+      "name" : "base",
+      "description" : "Inheritance tag",
+      "multiple" : false,
+      "addablePolicies" : false,
+      "policyElementAttributes" : [ ],
+      "policyElements" : [ ],
+      "selectedPolicyElements" : [ ],
+      "requiredPolicyElements" : [ ],
+      "requiredPolicyElementAttributes" : [ ]
+    } ]
+  } ],
+  "connector" : {
+    "id" : "64f9abeba235d27d062fa8bd",
+    "cts" : 1694084074496,
+    "createdUserName" : "vidya.wiz vidya.wiz",
+    "mts" : 1694084074496,
+    "connectorName" : "azure-poc-stage1",
+    "managementHost" : "azure-demo-apiwiz.management.azure-api.net",
+    "gatewayHost" : " azure-demo-apiwiz.azure-api.net",
+    "subscriptionId" : "3ff1a535-1e89-487e-83f1-778695628b4f",
+    "resourceGroup" : "apiwiz-azure",
+    "serviceName" : "azure-demo-apiwiz"
+  },
+  "enableScmUpload" : true,
+  "scmUpload" : {
+    "repoName" : "testingSwaggerPush",
+    "branch" : "main",
+    "hostUrl" : "https://github.com/Gautami0517/testingSwaggerPush",
+    "folderName" : "azure",
+    "commitMessage" : "init",
+    "scmSource" : "git",
+    "username" : "Gautami0517",
+    "password" : "",
+    "authType" : "token"
+  }
+}
