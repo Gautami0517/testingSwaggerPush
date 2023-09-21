@@ -1162,8 +1162,6 @@
         "summary" : "Create International Payment Consents",
         "operationId" : "CreateInternationalPaymentConsents",
         "parameters" : [ {
-          "$ref" : "#/parameters/OBWriteInternationalConsent2Param"
-        }, {
           "$ref" : "#/parameters/x-fapi-financial-id-Param"
         }, {
           "$ref" : "#/parameters/x-fapi-customer-last-logged-time-Param"
@@ -1214,7 +1212,9 @@
         },
         "security" : [ {
           "TPPOAuth2Security" : [ "payments" ]
-        } ]
+        } ],
+        "deprecated" : true,
+        "description" : "hh"
       }
     },
     "/international-payment-consents/{ConsentId}" : {
