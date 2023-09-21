@@ -76,7 +76,8 @@
         "security" : [ {
           "TPPOAuth2Security" : [ "payments" ]
         } ],
-        "description" : "Create Domestic Payment Consents"
+        "description" : "Create Domestic Payment Consents",
+        "deprecated" : true
       }
     },
     "/domestic-payment-consents/{ConsentId}" : {
